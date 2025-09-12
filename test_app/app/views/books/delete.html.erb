@@ -1,0 +1,21 @@
+<h1>Delete Book</h1>
+
+<div class="Show Book Details">
+
+  <%= form_with(model: @book, method: :delete) do |f| %>
+
+    <p>Do you want to permanently delete this book?</p>
+    <p>Title: <%= @book.title %></p>
+    <p>Author: <%= @book.author %></p>
+    <p>Price: <%= @book.price %></p>
+    <p>Published date: <%= @book.published_date %></p>
+
+    <div class="actions">
+      <%= f.submit("Delete Book") %>
+    </div>
+  <% end %>
+</div>
+
+<br>
+
+<%= button_to('Back to Book Collection', books_path, method: :get, class: "backToIndexButton") %>

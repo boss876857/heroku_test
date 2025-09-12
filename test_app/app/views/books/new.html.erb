@@ -1,0 +1,4 @@
+<h1>Add New Book</h1>
+<%= render 'formTemplate', book: @book %>
+<br>
+<%= button_to('Back to Book Collection', books_path, method: :get, class: "backToIndexButton") %>
