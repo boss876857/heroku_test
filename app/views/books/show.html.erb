@@ -1,0 +1,51 @@
+<h1>Book Details</h1>
+
+<div class="Show Book Details">
+  <table class="show-book-details" border="1">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Published date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <% if @book.title %>
+            <%= @book.title %>
+          <% else %>
+            **NO TITLE**
+          <% end %>
+        </td>
+        <td>
+          <% if @book.author %>
+            <%= @book.author %>
+          <% else %>
+            **NO AUTHOR**
+          <% end %>
+        </td>
+        <td>
+          <% if @book.price %>
+            <%= @book.price %>
+          <% else %>
+            **NO PRICE**
+          <% end %>
+        </td>
+        <td>
+          <% if @book.published_date %>
+            <%= @book.published_date %>
+          <% else %>
+            **NO PUBLISHED DATE**
+          <% end %>
+        </td>
+      </tr>
+    </tbody>
+ </table>
+
+</div>
+
+<br>
+
+<%= button_to('Back to Book Collection', books_path, method: :get, class: "backToIndexButton") %>
