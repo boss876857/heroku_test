@@ -53,6 +53,8 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
+  gem "brakeman", require: false
+  gem "rubocop", require: false
 end
 
 group :development do
@@ -75,8 +77,6 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'brakeman'
-gem 'rubocop'
 
 gem 'concurrent-ruby', '1.3.4'
 
