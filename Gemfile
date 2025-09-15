@@ -76,3 +76,4 @@ end
 gem 'concurrent-ruby', '1.3.4'
 
 gem 'yaml_db'
+gem 'seed_dump'
