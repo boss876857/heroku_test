@@ -11,5 +11,6 @@ Book.create!([
   { title: "Test Book 2", author: "Jeremy", price: 25, published_date: Date.today },
   { title: "Test Book 3", author: "Jeremy", price: 35, published_date: Date.today },
   { title: "Test Book 4", author: "Jeremy", price: 45, published_date: Date.today },
-  { title: "Test Book 5", author: "Jeremy", price: 55, published_date: Date.today }
+  { title: "Test Book 5", author: "Jeremy", price: 55, published_date: Date.today },
+  { title: "Test Book only in Test", author: "New", price: 1, published_date: Date.today }
 ])
